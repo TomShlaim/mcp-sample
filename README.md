@@ -5,17 +5,13 @@ A Python-based weather application that provides weather alerts and forecasts us
 ## Features
 
 - Get active weather alerts for any US state
-- Get detailed weather forecasts for any location using latitude and longitude
+- Get detailed weather forecasts for any location using latitude and longitude within the US
 - Uses official NWS API for accurate and reliable data
 - Runs as an MCP server for seamless integration
-A Python-based weather application that provides weather alerts and forecasts using the National Weather Service (NWS) API.
 
-## Features
+## Important Note
 
-- Get active weather alerts for any US state
-- Get detailed weather forecasts for any location using latitude and longitude
-- Uses official NWS API for accurate and reliable data
-- Runs as an MCP server for seamless integration
+This application uses the National Weather Service (NWS) API, which only provides weather data for locations within the United States. For international weather data, you would need to modify the application to use a different weather service API.
 
 ## Installation
 
@@ -27,13 +23,6 @@ pip install .
 
 ## Usage
 
-The application can be used in two ways: as a Python module or as an MCP server.
-
-### Using as an MCP Server
-
-The application is designed to run as an MCP server, which allows for seamless integration with MCP clients:
-
-1. Run the server:
 The application can be used in two ways: as a Python module or as an MCP server.
 
 ### Using as an MCP Server
@@ -57,7 +46,7 @@ python weather.py
   ```python
   # Example MCP client usage
   result = await mcp.invoke("get_forecast", {
-      "latitude": 37.7749,
+      "latitude": 37.7749,      # San Francisco coordinates
       "longitude": -122.4194
   })
   ```
@@ -98,4 +87,4 @@ The forecast includes:
 
 ## API Details
 
-The application uses the National Weather Service (NWS) API. No API key is required, but we include a User-Agent header as per API requirements.
+The application uses the National Weather Service (NWS) API. No API key is required, but we include a User-Agent header as per API requirements. The API only provides data for locations within the United States.
