@@ -8,6 +8,14 @@ A Python-based weather application that provides weather alerts and forecasts us
 - Get detailed weather forecasts for any location using latitude and longitude
 - Uses official NWS API for accurate and reliable data
 - Runs as an MCP server for seamless integration
+A Python-based weather application that provides weather alerts and forecasts using the National Weather Service (NWS) API.
+
+## Features
+
+- Get active weather alerts for any US state
+- Get detailed weather forecasts for any location using latitude and longitude
+- Uses official NWS API for accurate and reliable data
+- Runs as an MCP server for seamless integration
 
 ## Installation
 
@@ -19,6 +27,13 @@ pip install .
 
 ## Usage
 
+The application can be used in two ways: as a Python module or as an MCP server.
+
+### Using as an MCP Server
+
+The application is designed to run as an MCP server, which allows for seamless integration with MCP clients:
+
+1. Run the server:
 The application can be used in two ways: as a Python module or as an MCP server.
 
 ### Using as an MCP Server
