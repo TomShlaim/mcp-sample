@@ -64,6 +64,7 @@ from weather import get_alerts
 
 # Get alerts for California
 alerts = await get_alerts("CA")
+
 print(alerts)
 ```
 
